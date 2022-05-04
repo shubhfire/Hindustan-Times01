@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./styles/navbar_footer.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="LoginHomeLogin">
+      <div>Home</div>
+      <div>></div>
+      <div>Account</div>
+    </div>
+    <div id="LoginContainer">
+      <div>Login</div>
+      <div>
+        <div>
+          <img
+            src="https://lh3.googleusercontent.com/RXQSnZqCqQ3usoI90VIHYXlrWUXZyuXUrP2cdP8rrOyunK4-YWqxgL3LMIJvJFSNqdylkA=s82"
+            alt=""
+          />
+          <div>Sign in with Facebook</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://lh3.googleusercontent.com/am_RTh5nj7mPg0kgNaaGDoAUMv7GEqyJVqR6KgZTSl6LBTx2oJ5d9oTxdoF1wGS9sVll=s111"
+            alt=""
+          />
+          <div>Sign in with Google</div>
+        </div>
+      </div>
+      <div>Please enter your e-mail and password:</div>
+      <input type="email" placeholder="Email" name="email" />
+      <div>
+        <input type="password" placeholder="Password" />
+        <div>Forgot password?</div>
+      </div>
+      <button>Login</button>
+      <div>
+        <div>Don't have an account?</div>
+        <div>Create one</div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import { navbar, footer } from "./components/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("footer").innerHTML = footer();
+
+  import { navbarJs } from "./scripts/navbarJsPart.js";
+  navbarJs();
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="./styles/navbar_footer.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="LoginHomeLogin">
+      <div>Home</div>
+      <div>></div>
+      <div>Create Account</div>
+    </div>
+    <div id="LoginContainer" style="margin-top: 20px">
+      <div>Register</div>
+      <div>
+        <div>
+          <img
+            src="https://lh3.googleusercontent.com/RXQSnZqCqQ3usoI90VIHYXlrWUXZyuXUrP2cdP8rrOyunK4-YWqxgL3LMIJvJFSNqdylkA=s82"
+            alt=""
+          />
+          <div>Sign in with Facebook</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://lh3.googleusercontent.com/am_RTh5nj7mPg0kgNaaGDoAUMv7GEqyJVqR6KgZTSl6LBTx2oJ5d9oTxdoF1wGS9sVll=s111"
+            alt=""
+          />
+          <div>Sign in with Google</div>
+        </div>
+      </div>
+      <div>Please fill in the information below:</div>
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="Last name" class="signupInput" />
+      <input
+        type="email"
+        placeholder="Email"
+        class="signupInput"
+        name="email"
+      />
+      <input type="password" placeholder="Password" class="signupInput" />
+      <button id="resisterbtn">Create My Account</button>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import { navbar, footer } from "./components/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("footer").innerHTML = footer();
+
+  import { navbarJs } from "./scripts/navbarJsPart.js";
+  navbarJs();
+</script>
